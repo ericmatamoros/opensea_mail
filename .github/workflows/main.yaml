@@ -1,8 +1,7 @@
 name: Run Python Script
 
 on:
-  schedule:
-    - cron: "0 5 * * *"
+  push
 
 jobs:
   run-python:
