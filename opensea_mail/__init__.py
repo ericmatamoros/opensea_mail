@@ -1,5 +1,5 @@
 """
-Top-level package for Property Valuation tracker
+Top-level package for OpenSea Floor Price Tracker
 """
 import os
 
