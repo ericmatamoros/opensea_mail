@@ -1,7 +1,6 @@
 # Package dependencies
 pandas
 numpy
-bs4
 pyyaml
 loguru
 jupyter
