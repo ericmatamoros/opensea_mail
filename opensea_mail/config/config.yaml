@@ -1,0 +1,14 @@
+# OpenSea Key
+opensea_key: "6cabe496f87d49b48869406c398f2af7"
+
+# Collection properties
+nft_collections:
+  'mutant-hounds': 0.15
+  'y00ts': 1
+  'thecaptainz': 4.9
+
+# Mailing setup
+send_analytics: True
+sender_password: "evvbfzpeusmyicit"
+sender_mail: "pythonlovesfinance@gmail.com"
+receiver_mail: "ericmatamoros1999@gmail.com"

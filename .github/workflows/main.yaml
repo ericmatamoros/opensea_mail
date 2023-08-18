@@ -1,0 +1,24 @@
+name: Run Python Script
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run Python script
+        run: python3 -m opensea_mail.scripts.pipeline
