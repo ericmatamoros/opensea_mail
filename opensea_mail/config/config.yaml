@@ -1,13 +1,14 @@
 # OpenSea Key
-opensea_key: "6cabe496f87d49b48869406c398f2af7"
+opensea_key: "" # Opensea key
 
-# Collection properties
+# Collection watchlist
+# Dictionary with collection_name : FP threshold
 nft_collections:
   'thepotatoz': 1.6
   'thecaptainz': 4.9
 
 # Mailing setup
-send_analytics: True
-sender_password: "evvbfzpeusmyicit"
-sender_mail: "pythonlovesfinance@gmail.com"
-receiver_mail: "ericmatamoros1999@gmail.com"
+send_analytics: True # If True, send email when FP is surpassed
+sender_password: "" # App password (https://support.google.com/accounts/answer/185833?hl=en)
+sender_mail: "" # Sender mail
+receiver_mail: "" # Receiver mail
