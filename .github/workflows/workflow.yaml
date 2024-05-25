@@ -1,5 +1,5 @@
 # This should be placed on the .github/workflows folder so that it can be interpreted by Github Actions
-name: Run Python Script
+name: Pipeline
 
 on:
   push:
