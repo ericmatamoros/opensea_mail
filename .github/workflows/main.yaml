@@ -1,0 +1,32 @@
+name: Pipeline
+
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  run-python:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Run Python script
+        env:
+          OPENSEA_KEY: ${{ secrets.OPENSEA_KEY }}
+          COINMARKETCAP_KEY: ${{ secrets.COINMARKETCAP_KEY }}
+          SCRAPINGDOG_KEY_CLOUD: ${{ secrets.SCRAPINGDOG_KEY }}
+          SENDER_PASSWORD: ${{ secrets.SENDER_PASSWORD }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+        run: python3 -m opensea_mail.scripts.pipeline
