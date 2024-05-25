@@ -4,6 +4,7 @@ opensea_key: "" # Opensea key
 # Dictionary with collection_name : FP - [lower, upper]
 nft_collections:
   'memelandcaptainz': [2.5, 4.2]
+  'treeverse': [0.2, 0.4]
 
 crypto_currency:
   'MEME': [0.02, 0.04]
