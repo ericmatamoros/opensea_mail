@@ -7,6 +7,7 @@ nft_collections:
 
 crypto_currency:
   'MEME': [0.02, 0.04]
+  'ETH': [3000, 4300]
 
 # Mailing setup
 send_analytics: True # If True, send email when FP is surpassed
