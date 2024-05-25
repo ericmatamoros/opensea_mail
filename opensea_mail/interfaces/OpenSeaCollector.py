@@ -19,13 +19,14 @@ class OpenSeaCollector:
     def get_fp(self) -> Optional[Response]:
         # Construct the API endpoint URL
 
-        url = f'https://api.opensea.io/api/v1/collection/{self._collection}/stats'
+        # Define the API endpoint and headers
+        url = f"https://api.opensea.io/api/v2/collections/{self._collection}/stats"
 
         # Make the GET request
         response = requests.get(url, headers=self._headers)
         data = response.json()
         if response.status_code == 200:
-            fp = float(data['stats']['floor_price'])
+            fp = float(data['total']['floor_price'])
 
         else:
             fp = -1

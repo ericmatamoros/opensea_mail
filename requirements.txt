@@ -4,3 +4,4 @@ numpy
 pyyaml
 loguru
 jupyter
+python-dotenv

@@ -1,14 +1,10 @@
 # OpenSea Key
 opensea_key: "" # Opensea key
 
-# Collection watchlist
-# Dictionary with collection_name : FP threshold
+# Dictionary with collection_name : FP - [lower, upper]
 nft_collections:
-  'thepotatoz': 1.6
-  'thecaptainz': 4.9
+  'memelandcaptainz': [2.5, 4.2]
 
 # Mailing setup
 send_analytics: True # If True, send email when FP is surpassed
-sender_password: "" # App password (https://support.google.com/accounts/answer/185833?hl=en)
-sender_mail: "" # Sender mail
-receiver_mail: "" # Receiver mail
+# App password (https://support.google.com/accounts/answer/185833?hl=en)
