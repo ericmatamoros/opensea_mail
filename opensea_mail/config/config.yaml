@@ -5,6 +5,9 @@ opensea_key: "" # Opensea key
 nft_collections:
   'memelandcaptainz': [2.5, 4.2]
 
+crypto_currency:
+  'MEME': [0.02, 0.04]
+
 # Mailing setup
 send_analytics: True # If True, send email when FP is surpassed
 # App password (https://support.google.com/accounts/answer/185833?hl=en)
