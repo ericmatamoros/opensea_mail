@@ -1,13 +1,10 @@
-# OpenSea Key
-opensea_key: "" # Opensea key
-
 # Dictionary with collection_name : FP - [lower, upper]
 nft_collections:
-  'memelandcaptainz': [2.5, 4.2]
-  'treeverse-plots': [0.2, 0.4]
+  'memelandcaptainz': [3.0, 3.7]
+  'thepotatoz': [1.2, 1.6]
 
 crypto_currency:
-  'MEME': [0.02, 0.04]
+  'MEME': [0.02, 0.03]
   'ETH': [3000, 4300]
 
 # Mailing setup
