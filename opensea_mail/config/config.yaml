@@ -1,11 +1,9 @@
 # Dictionary with collection_name : FP - [lower, upper]
 nft_collections:
-  'memelandcaptainz': [3.0, 3.7]
-  'thepotatoz': [1.2, 1.6]
+  'memelandcaptainz': [2.0, 3.0]
 
 crypto_currency:
-  'MEME': [0.02, 0.03]
-  'ETH': [3000, 4300]
+  'MEME': [0.01, 0.02]
 
 # Mailing setup
 send_analytics: True # If True, send email when FP is surpassed
