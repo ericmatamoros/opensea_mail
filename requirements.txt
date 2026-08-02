@@ -1,7 +1,4 @@
-# Package dependencies
-pandas
-numpy
-pyyaml
-loguru
-jupyter
-python-dotenv
+# Runtime dependencies
+python-dotenv>=1.0,<2.0
+PyYAML>=6.0,<7.0
+requests>=2.31,<3.0

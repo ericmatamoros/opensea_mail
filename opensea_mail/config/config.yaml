@@ -1,10 +1,15 @@
-# Dictionary with collection_name : FP - [lower, upper]
+# Prices are alerted when they are strictly below `lower` or above `upper`.
 nft_collections:
-  'memelandcaptainz': [2.0, 3.0]
+  boredapeyachtclub:
+    name: Bored Ape Yacht Club
+    lower: 7.5
+    upper: 9.2
 
 crypto_currency:
-  'MEME': [0.01, 0.02]
+  ETH:
+    name: Ethereum
+    lower: 1200
+    upper: 2000
 
-# Mailing setup
-send_analytics: True # If True, send email when FP is surpassed
-# App password (https://support.google.com/accounts/answer/185833?hl=en)
+# Set to false to collect/log prices without sending email.
+send_email: true

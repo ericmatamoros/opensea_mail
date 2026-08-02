@@ -1,4 +1,1 @@
-# -*- coding: utf-8 -*-
-"""
-Scripts
-"""
+"""Executable scripts for opensea_mail."""

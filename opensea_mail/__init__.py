@@ -1,14 +1,17 @@
-"""
-Top-level package for OpenSea Floor Price Tracker
-"""
-import os
+"""Top-level package for the NFT and token price tracker."""
 
-from opensea_mail.logging import create_logger
+import logging
 from pathlib import Path
 
-
-logger = create_logger(__name__)
-
-BASE_PATH = Path(os.path.dirname(__file__))
+BASE_PATH = Path(__file__).resolve().parent
 CONFIG_PATH = BASE_PATH / "config"
-DATA_PATH = BASE_PATH / "data"
+
+logger = logging.getLogger("opensea_mail")
+if not logger.handlers:
+    handler = logging.StreamHandler()
+    handler.setFormatter(
+        logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(message)s")
+    )
+    logger.addHandler(handler)
+logger.setLevel(logging.INFO)
+logger.propagate = False
